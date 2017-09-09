@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="./events.js"></script>
+    <title>Events Near You</title>
+</head>
+<style>
+    #main {
+        margin: auto;
+        width: 50%;
+        padding-top: 10%;
+        text-align: center;
+    }
+
+    body {
+        font-family: Helvetica;
+    }
+</style>
+
+<body onload="createEvents()">
+    <div id="main">
+        <h1>Find events near you</h1>
+        <h3>Enter your location below</h3>
+        <br/> X-Coordinate: <select name="xcoordinate" size="1" id="x_coordinate">
+                          <option value=-10>-10</option>
+                          <option value=-9>-9</option>
+                          <option value=-8>-8</option>
+                          <option value=-7>-7</option>
+                          <option value=-6>-6</option>
+                          <option value=-5>-5</option>
+                          <option value=-4>-4</option>
+                          <option value=-3>-3</option>
+                           <option value=-2>-2</option>
+                          <option value=-1>-1</option>
+                          <option selected value=0>0</option>
+                          <option value=1>1</option>
+                          <option value=2>2</option>
+                          <option value=3>3</option>
+                          <option value=4>4</option>
+                          <option value=5>5</option>
+                          <option value=6>6</option>
+                          <option value=7>7</option>
+                          <option value=8>8</option>
+                          <option value=9>9</option>
+                          <option value=10>10</option>
+                        </select><br>
+        <br> Y-Coordinate: <select name="ycoordinate" size="1" id="y_coordinate">
+                          <option value=-10>-10</option>
+                          <option value=-9>-9</option>
+                          <option value=-8>-8</option>
+                          <option value=-7>-7</option>
+                          <option value=-6>-6</option>
+                          <option value=-5>-5</option>
+                          <option value=-4>-4</option>
+                          <option value=-3>-3</option>
+                           <option value=-2>-2</option>
+                          <option value=-1>-1</option>
+                          <option selected value=0>0</option>
+                          <option value=1>1</option>
+                          <option value=2>2</option>
+                          <option value=3>3</option>
+                          <option value=4>4</option>
+                          <option value=5>5</option>
+                          <option value=6>6</option>
+                          <option value=7>7</option>
+                          <option value=8>8</option>
+                          <option value=9>9</option>
+                          <option value=10>10</option>
+                        </select><br><br>
+        <input type="submit" value="Search" onclick="fiveClosest()">
+    </div>
+</body>
+
+</html>
