@@ -1,4 +1,3 @@
-//Viagogo coding challenge
 //Sidharth Shekhar
 
 var events = []; //array that holds all events
